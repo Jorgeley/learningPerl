@@ -9,3 +9,10 @@ print "The last index is $lastIndex \n";
 
 #you can use the index above to get the last element, or just do this:
 print "The last value is $array[-1] \n"; #if 0 is the first element, so -1 is before it, like a circle queue
+
+#string as index: associatve arrays:
+%associativeArray = ( "index1", "value1", "index2", "value2");
+print "This is an associative array:\n";
+foreach $index (keys %associativeArray){
+	print "\t[$index] ", $associativeArray{$index}, "\n";
+}
